@@ -1,0 +1,77 @@
+/*******************************
+    ROOT
+    VARIABLES
+*******************************/
+:root {
+    --primary: #c6976d;
+    --secondary: #d9d9d9;
+    --white: #fff;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: bold;
+    --bg-nav: #404040;
+}
+
+/*******************************
+ RESET CSS 
+ ******************************/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-weight: var(--fw-regular);
+}
+
+*::selection {
+    background-color: var(--primary);
+}
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+body {
+    width: 100%;
+    font-weight: var(--fw-regular);
+}
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: var(--white);
+    margin: auto;
+    padding: 2rem;
+}
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit
+}
+th {
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+    text-align: -internal-center;
+}

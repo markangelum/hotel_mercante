@@ -1,0 +1,135 @@
+/*******************************
+ ROOT VARIABLES 
+*******************************/
+:root {
+    --primary: #c6976d;
+    --secondary: #d9d9d9;
+    --white: #fff;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-bold: bold;
+    --bg-nav: #404040;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    background: #ffffffa7;
+}
+
+main {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url(../image/bg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input,
+textarea {
+    width: 100%;
+}
+form {
+    max-width: 600px;
+    margin: auto;
+    background: var(--white);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.form-header {
+    background-color: var(--primary);
+    color: var(--white);
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-header h2 {
+    font-weight: var(--fw-medium);
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.form-header p {
+    font-weight: var(--fw-regular);
+    font-size: 0.95rem;
+    letter-spacing: 0.5px;
+}
+
+.form-body {
+    padding: 1rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-body label {
+    font-weight: 600;
+}
+
+.form-body div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-body input:not([type="submit"]),
+textarea {
+    padding: 0.75rem;
+    border: 1px solid rgba(0, 0, 0, 0.497);
+    outline: none;
+}
+
+input,
+textarea {
+    border-radius: 3px;
+}
+
+.form-body div:last-child {
+    align-items: center;
+}
+.form-body .submit-btn {
+    width: max-content;
+    text-align: center;
+    padding: 0.75rem 5rem;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1px;
+    border: 2px solid var(--primary);
+    cursor: pointer;
+    background: var(--primary);
+    color: var(--white);
+    font-size: 1rem;
+    transition: 200ms ease-in-out;
+}
+
+.form-body .submit-btn:hover {
+    background: transparent;
+    color: var(--primary);
+}
+
+@media screen and (max-width: 767px) {
+    form {
+        width: 80%;
+        margin: auto;
+        min-width: 370px;
+    }
+
+    .submit-btn {
+        width: 100% !important;
+    }
+}
